@@ -1,0 +1,44 @@
+# ignore Intellij IDEA configuration folder
+.idea/**
+**/*.iml
+**/atlassian-ide-plugin.xml
+atlassian-ide-plugin.xml
+
+# ignore maven default working directory
+**/target
+
+# ignore OS X thing
+**/.DS_Store
+.DS_Store
+
+# ignore vagrant meta data
+**/.vagrant
+
+## ignore terraform state content
+*.tfstate*
+.terraform/
+tfplan
+keys/
+# Net
+/stl-dotnet/**/.vs
+/stl-dotnet/**/.project
+/stl-dotnet/**/*.*proj.user
+/stl-dotnet/**/bin
+/stl-dotnet/**/obj
+/stl-dotnet/.idea/*
+/ignite
+**/.vscode
+#ignore docker volumes
+/.docker/volumes
+**/.vscode
+/.vs
+/.docker/edi-preprocess.zip
+/stl-dotnet/.idea/.idea.stl-dotnet/.idea/dataSources.xml
+/stl-dotnet/.idea/.idea.stl-dotnet/.idea/*.xml
+/stl-dotnet/.idea/config/applicationhost.config
+/stl-dotnet/stl-dotnet.sln.DotSettings.user
+/stl-dotnet/stl-price-service/ignite/work
+/stl-java/.idea/libraries
+/stl-java/.idea
+/stl-java/stl-ignite/.settings
+/stl-dotnet/Dockerfiletest
