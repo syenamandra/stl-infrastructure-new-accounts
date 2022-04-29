@@ -52,7 +52,7 @@ data "template_file" "stl_pricing_task_definition" {
       },
         "dockerLabels": {
         "com.confluence.stl.service": "stl-pricing-service",
-        "com.confluence.stl.environment" : "development",
+        "com.confluence.stl.environment" : "${var.environment_long}",
         "com.confluence.stl.version": "1.0.0"
       },
       "secrets": [

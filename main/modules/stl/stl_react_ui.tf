@@ -57,7 +57,7 @@ data "template_file" "stl_reactui_task_definition" {
       ],
       "dockerLabels": {
         "com.confluence.stl.service": "stl-react-ui-service",
-        "com.confluence.stl.environment" : "development",
+        "com.confluence.stl.environment" : "${var.environment_long}",
         "com.confluence.stl.version": "1.0.0"
       },
       "environment": [
