@@ -18,6 +18,7 @@ atlassian-ide-plugin.xml
 *.tfstate*
 .terraform/
 tfplan
+tplan
 keys/
 # Net
 /stl-dotnet/**/.vs
