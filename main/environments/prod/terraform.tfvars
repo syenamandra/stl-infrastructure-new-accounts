@@ -48,3 +48,7 @@ pricing_image_uri = "399497620873.dkr.ecr.ca-central-1.amazonaws.com/stl/stl-pri
 reactui_image_uri = "399497620873.dkr.ecr.ca-central-1.amazonaws.com/stl/stl-react-ui:latest"
 
 remove_chars_image_uri = "399497620873.dkr.ecr.ca-central-1.amazonaws.com/stl/stl-lambda-remove-chars:latest"
+
+fileemptycheck_image_uri = "399497620873.dkr.ecr.ca-central-1.amazonaws.com/stl/stl-lambda-file-empty-check:latest"
+
+jsontocsv_image_uri = "399497620873.dkr.ecr.ca-central-1.amazonaws.com/stl/stl-lambda-jsontocsv:latest"

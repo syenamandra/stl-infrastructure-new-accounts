@@ -109,6 +109,10 @@ data "template_file" "stl_importer_task_definition" {
         {
           "name" : "ASPNETCORE_ENVIRONMENT",
           "value" : "${var.environment_long}"
+        },
+        {
+          "name" : "TZ",
+          "value" : "America/Toronto"
         }
       ],
       "ulimits": [

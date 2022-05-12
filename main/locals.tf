@@ -3,7 +3,7 @@ locals {
   log_group_prefix       = "/${var.service}/${var.environment}"
   terraform_state_bucket = "statpro.${data.aws_caller_identity.current.account_id}.terraform"
   trusted_networks       = split("\n", data.aws_s3_bucket_object.statpro_ips.body)
-  s3_bucket_name         = "${var.service}-${var.environment}-${data.aws_region.current.name}"
+  s3_bucket_name         = "${var.service}-${var.environment}-${data.aws_caller_identity.current.account_id}-${data.aws_region.current.name}"
   tags = merge(
     {
       "CostCenter"        = "Services"

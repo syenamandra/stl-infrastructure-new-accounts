@@ -88,7 +88,7 @@ data "template_file" "stl_pricing_task_definition" {
         },
         {
           "name"  : "STL_IGNITE_HOME",
-          "value" : "/opt/ignite/apache-ignite-2.12.0-bin"
+          "value" : "/opt/ignite/apache-ignite-2.11.1-bin"
         },
         {
           "name"  : "STL_HOME",
