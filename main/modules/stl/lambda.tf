@@ -1,7 +1,7 @@
 ## EDI Preprocess
 
 resource "aws_lambda_function" "edi_preprocess" {
-  function_name = "${var.default_name}-edi-preprocess"
+  function_name = "${var.service}-edi-preprocess"
   role          = aws_iam_role.lambda_role.arn
   package_type  = "Image"
   timeout       = var.lambda_timeout
@@ -25,7 +25,7 @@ resource "aws_lambda_function" "edi_preprocess" {
 ## Remove Chars
 
 resource "aws_lambda_function" "remove_chars" {
-  function_name = "${var.default_name}-remove-chars"
+  function_name = "${var.service}-remove-chars"
   role          = aws_iam_role.lambda_role.arn
   package_type  = "Image"
   timeout       = var.lambda_timeout
@@ -50,7 +50,7 @@ resource "aws_lambda_function" "remove_chars" {
 
 # EventBridge
 resource "aws_lambda_function" "eventbridge" {
-  function_name = "${var.default_name}-eventbridge"
+  function_name = "${var.service}-eventbridge"
   role          = aws_iam_role.lambda_role.arn
   package_type  = "Image"
   timeout       = var.lambda_timeout
@@ -78,7 +78,7 @@ resource "aws_lambda_function" "eventbridge" {
 #File Empty Check
 
 resource "aws_lambda_function" "filecheck" {
-  function_name = "${var.default_name}-fileemptycheck"
+  function_name = "${var.service}-fileemptycheck"
   role          = aws_iam_role.lambda_role.arn
   package_type  = "Image"
   timeout       = var.lambda_timeout
@@ -102,7 +102,7 @@ resource "aws_lambda_function" "filecheck" {
 ## jsontocsv
 
 resource "aws_lambda_function" "jsontocsv" {
-  function_name = "${var.default_name}-jsontocsv"
+  function_name = "${var.service}-jsontocsv"
   role          = aws_iam_role.lambda_role.arn
   package_type  = "Image"
   timeout       = var.lambda_timeout
